@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Welcome to Lagrange!"
-author: "Paul Le"
+author: "El Contador"
 categories: journal
 tags: [documentation,sample]
 image:
