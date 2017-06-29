@@ -1,7 +1,7 @@
 # Site Settings
 
 paginate:            5
-disqus:              #"your-disqus"
+disqus:              "https-partidadoble-github-io"
 
 # Build settings
 markdown:            kramdown

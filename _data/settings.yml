@@ -1,19 +1,19 @@
 title:  Partida doble
-tagline:  a minimalist Jekyll theme
+tagline:  Contabilidad fresa
 author:
-  name: "Paul Le"
+  name: "El contador"
   twitter:  paululele
 
 menu:
-- {name: 'About', url: 'about.html'}
-- {name: 'Writing', url: 'writing.html'}
-- {name: 'Contact', url: 'contact.html'}
+- {name: 'Quien soy', url: 'about.html'}
+- {name: 'Publicaciones', url: 'writing.html'}
+- {name: 'Contacto', url: 'contact.html'}
 
 social:
 - {icon: 'github', link: 'https://www.github.com/lenpaul'}
 - {icon: 'twitter', link: 'https://twitter.com/paululele'}
-- {icon: 'instagram', link: 'https://instagram.com/paululele'}
-- {icon: 'linkedin', link: 'http://www.linkedin.com/in/lenpaul/'}
-- {icon: 'envelope', link: 'mailto:l.nguyen.paul@gmail.com'}
+#- {icon: 'instagram', link: 'https://instagram.com/paululele'}
+#- {icon: 'linkedin', link: 'http://www.linkedin.com/in/lenpaul/'}
+#- {icon: 'envelope', link: 'mailto:l.nguyen.paul@gmail.com'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
