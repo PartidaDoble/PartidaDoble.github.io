@@ -17,7 +17,7 @@ title: Home
 
     <!--{{ post.date | date_to_string }} - -->
 
-    {{ post.date | date: "%-d" }} 
+    {{ post.date | date: "%d" }}
     {% assign m = post.date | date: "%-m" %}
 
     {% case m %}
@@ -33,11 +33,11 @@ title: Home
       {% when '10' %}Octubre
       {% when '11' %}Noviembre
       {% when '12' %}Diciembre
-    {% endcase %} 
+    {% endcase %}
 
     {{ post.date | date: "%Y" }}
-
-    <!--<i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</span>-->
+    </span>
+    <!--<i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}-->
   </p>
 </div>
 {% endfor %}
@@ -45,15 +45,15 @@ title: Home
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-button pagination-active" href="{{ site.github.url }}{{ paginator.next_page_path }}" class="next">Antiguas</a>
+    <a class="pagination-button pagination-active" href="{{ site.github.url }}{{ paginator.next_page_path }}" class="next">Anterior</a>
   {% else %}
-    <span class="pagination-button">Antiguas</span>
+    <span class="pagination-button">Anterior</span>
   {% endif %}
 
   {% if paginator.previous_page %}
-    <a class="pagination-button pagination-active" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">Recientes</a>
+    <a class="pagination-button pagination-active" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">Reciente</a>
     {% else %}
-      <span class="pagination-button">Recientes</span>
+      <span class="pagination-button">Reciente</span>
   {% endif %}
 
 </div>

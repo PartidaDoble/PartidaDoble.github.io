@@ -5,8 +5,8 @@ author: "El Contador"
 categories: journal
 tags: [documentation,sample]
 image:
-  feature: mountains.jpg
-  teaser: mountains-teaser.jpg
+  feature: Vencimiento.png
+  teaser: Vencimiento.png
   credit: Death to Stock Photo
   creditlink: ""
 ---
