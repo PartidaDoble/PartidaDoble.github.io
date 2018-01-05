@@ -2,7 +2,7 @@
 layout: post
 title: "Khan Academy"
 author: "Paul Le"
-categories: journal
+categories: test
 tags: [documentation,sample]
 image:
   feature: cards.jpg

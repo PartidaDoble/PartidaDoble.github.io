@@ -2,7 +2,7 @@
 layout: post
 title: "Death to Stock"
 author: "Paul Le"
-categories: journal
+categories: test
 tags: [documentation,sample]
 image:
   feature: forest.jpg

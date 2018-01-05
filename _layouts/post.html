@@ -12,47 +12,50 @@ layout: default
 
 {{ content }}
 
+
 <span class="post-date">
-  <!--Written on-->
-  <!--{% assign d = page.date | date: "%-d"  %}
-  {{ page.date | date: "%B" }}
-  {% case d %}
-    {% when '1' or '21' or '31' %}{{ d }}st
-    {% when '2' or '22' %}{{ d }}nd
-    {% when '3' or '23' %}{{ d }}rd
-    {% else %}{{ d }}th{% endcase %},
-  {{ page.date | date: "%Y" }}-->
-
-{{ page.date | date: "%-d" }} 
-{% assign m = page.date | date: "%-m" %}
-
-{% case m %}
-  {% when '1' %}Enero
-  {% when '2' %}Febrero
-  {% when '3' %}Marzo
-  {% when '4' %}Abril
-  {% when '5' %}Mayo
-  {% when '6' %}Junio
-  {% when '7' %}Julio
-  {% when '8' %}Agosto
-  {% when '9' %}Septiembre
-  {% when '10' %}Octubre
-  {% when '11' %}Noviembre
-  {% when '12' %}Diciembre
-{% endcase %} 
-
-{{ page.date | date: "%Y" }}
-
- - 
   {% if page.author %}
     {{ page.author }}
   {% else %}
     {{ site.data.settings.author.name }}
   {% endif %}
+-
+  <!--{% assign d = page.date | date: "%-d"  %}
+    {{ page.date | date: "%B" }}
+    {% case d %}
+      {% when '1' or '21' or '31' %}{{ d }}st
+      {% when '2' or '22' %}{{ d }}nd
+      {% when '3' or '23' %}{{ d }}rd
+      {% else %}{{ d }}th{% endcase %},
+    {{ page.date | date: "%Y" }}-->
+
+  {{ page.date | date: "%d" }}
+  {% assign m = page.date | date: "%-m" %}
+
+  {% case m %}
+    {% when '1' %}Enero
+    {% when '2' %}Febrero
+    {% when '3' %}Marzo
+    {% when '4' %}Abril
+    {% when '5' %}Mayo
+    {% when '6' %}Junio
+    {% when '7' %}Julio
+    {% when '8' %}Agosto
+    {% when '9' %}Septiembre
+    {% when '10' %}Octubre
+    {% when '11' %}Noviembre
+    {% when '12' %}Diciembre
+  {% endcase %}
+
+  {{ page.date | date: "%Y" }}
+
 </span>
+
 {% include social-sharing.html %}
 {% include related-posts.html %}
 
 {% if site.disqus %}
   {% include disqus.html %}
 {% endif %}
+
+<script src="{{ site.github.url }}/assets/js/script.js"></script>

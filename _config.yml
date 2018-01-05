@@ -8,3 +8,5 @@ markdown:            kramdown
 highlighter:         rouge
 permalink:           none
 gems:                [jekyll-paginate]
+
+# run: jekyll serve

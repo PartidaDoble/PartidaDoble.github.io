@@ -36,8 +36,8 @@ title: Home
     {% endcase %}
 
     {{ post.date | date: "%Y" }}
+    - <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}
     </span>
-    <!--<i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}-->
   </p>
 </div>
 {% endfor %}

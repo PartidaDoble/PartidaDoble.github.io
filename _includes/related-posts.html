@@ -10,8 +10,32 @@
             <h3>
               <a href="{{ site.github.url }}{{ mypost.url }}">
                 {{ mypost.title }}
+                <span class="post-date" style="margin-top:3px"><i class="fa fa-calendar" aria-hidden="true"></i>
 
-                <small style="font-size: 0.6em; color: #939EA7;">
+                  <!--{{ mypost.date | date_to_string }} - -->
+
+                  {{ mypost.date | date: "%d" }}
+                  {% assign m = mypost.date | date: "%-m" %}
+
+                  {% case m %}
+                    {% when '1' %}Enero
+                    {% when '2' %}Febrero
+                    {% when '3' %}Marzo
+                    {% when '4' %}Abril
+                    {% when '5' %}Mayo
+                    {% when '6' %}Junio
+                    {% when '7' %}Julio
+                    {% when '8' %}Agosto
+                    {% when '9' %}Septiembre
+                    {% when '10' %}Octubre
+                    {% when '11' %}Noviembre
+                    {% when '12' %}Diciembre
+                  {% endcase %}
+
+                  {{ mypost.date | date: "%Y" }}
+                  - <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}
+                  </span>
+                <!-- <small style="font-size: 0.6em; color: #939EA7;">
                 {{ mypost.date | date: "%d" }}
                 {% assign m = mypost.date | date: "%-m" %}
 
@@ -31,7 +55,7 @@
                 {% endcase %}
 
                 {{ mypost.date | date: "%Y" }}
-                </small>
+                </small> -->
 
                 <!-- <a href="{{ site.github.url }}{{ post.url }}"><img src="{{ site.github.url }}/assets/img/{{ mypost.image.teaser }}"></a> -->
               </a>
